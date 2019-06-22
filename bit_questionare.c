@@ -3,6 +3,9 @@
 #include <string.h>
 
 
+const ASCII_NUM_CHAR_POSITION = 48;
+
+
 void print_value_as_bits(unsigned char * output){
 	// This function displays every single bit from our value.
 	unsigned char bitstring[CHAR_BIT + 1];  // +1 so we can append null at the end for sake of printf.
@@ -10,7 +13,7 @@ void print_value_as_bits(unsigned char * output){
 
 	// char_position = human readable, left-to-right.
 	for(short int char_position = 0; char_position < CHAR_BIT; char_position++){
-		bitstring[char_position] = ((*output >> (CHAR_BIT - 1 - char_position)) & base_mask) == 1 ? '1' : '0';
+		bitstring[char_position] = ((*output >> (CHAR_BIT - 1 - char_position)) & base_mask) + ASCII_NUM_CHAR_POSITION;
 	}
 
 	bitstring[CHAR_BIT] = '\0';
