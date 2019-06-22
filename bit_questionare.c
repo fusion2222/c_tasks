@@ -97,7 +97,7 @@ int main(void){
 	);
 
 	// Ok, our data are gathered. Now lets encode our values.
-	unsigned char data = 0;  // So we have zeroes. Nulled char is null. 	
+	unsigned char data = 0;
 	unsigned char * pData = &data;
 
 	add_bit_value_at_position(sex, 1, pData);
