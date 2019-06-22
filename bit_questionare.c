@@ -3,7 +3,7 @@
 #include <string.h>
 
 
-const ASCII_NUM_CHAR_POSITION = 48;
+const short int ASCII_NUM_CHAR_POSITION = 48;
 
 
 void print_value_as_bits(unsigned char * output){
