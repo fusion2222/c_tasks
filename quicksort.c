@@ -1,14 +1,5 @@
 #include <stdio.h>
-
-
-void display_results(int * arr, int count){
-	printf("[+] Items: ");
-	char * output;
-	for (int i = 0; i < count; ++i){
-		printf("%i ", arr[i]);
-	}
-	printf("\n");
-}
+#include "display_results.h"
 
 
 void swap(int a_index, int b_index, int * arr){
