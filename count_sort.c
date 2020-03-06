@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include "display_results.h"
+#include "utils.h"
 
 
 int main(int argc, char const *argv[]){

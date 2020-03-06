@@ -1,12 +1,5 @@
 #include <stdio.h>
-#include "display_results.h"
-
-
-void swap(int a_index, int b_index, int * arr){
-	int proxy = arr[a_index];
-	arr[a_index] = arr[b_index];
-	arr[b_index] = proxy;
-}
+#include "utils.h"
 
 
 int parition(int low_index, int high_index, int * sortlist){
@@ -16,8 +9,6 @@ int parition(int low_index, int high_index, int * sortlist){
 
 	int low_swap_flag = 0;
 	int high_swap_flag = 0;
-
-	// printf("[+] Pivot is : %d\n", sortlist[pivot_index]);
 
 	while(1){
 		while(low_index <= high_index){
@@ -37,12 +28,12 @@ int parition(int low_index, int high_index, int * sortlist){
 		}
 
 		if(high_index <= low_index){
-			swap(low_index, pivot_index, sortlist);
+			swap(&sortlist[low_index], &sortlist[pivot_index]);
 			return low_index;
 		}
 
 		if(high_swap_flag && low_swap_flag){
-			swap(low_index, high_index, sortlist);
+			swap(&sortlist[low_index], &sortlist[high_index]);
 			high_swap_flag = 0;
 			low_swap_flag = 0;
 		}

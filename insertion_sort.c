@@ -1,14 +1,5 @@
 #include <stdio.h>
-
-
-void display_results(int * arr, int count){
-	printf("[+] Items: ");
-	char * output;
-	for (int i = 0; i < count; ++i){
-		printf("%i ", arr[i]);
-	}
-	printf("\n");
-}
+#include "utils.h"
 
 
 void insertion_sort(int * list, int list_length, int key_index){

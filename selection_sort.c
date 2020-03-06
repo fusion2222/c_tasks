@@ -1,21 +1,5 @@
 #include <stdio.h>
-
-
-void swap(int *a, int *b){
-	int temp = *a;
-	*a = *b;
-	*b = temp;
-}
-
-
-void display_results(int * list, int count){
-	printf("[+] Items: ");
-	char * output;
-	for(int i = 0; i < count; ++i){
-		printf("%i ", list[i]);
-	}
-	printf("\n");
-}
+#include "utils.h"
 
 
 void selection_sort(int * list, int count, int start_index){

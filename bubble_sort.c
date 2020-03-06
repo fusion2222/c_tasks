@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "display_results.h"
+#include "utils.h"
 
 
 void bubble_sort(int * sortlist, int count){

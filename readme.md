@@ -10,4 +10,4 @@ Compilation and execution of compiled file:
 
 Some algorithms, for example `bubble_sort.c` may need compilation with more than one C file:
 
-`gcc bubble_sort.c display_results.c -o main && ./main`
+`gcc bubble_sort.c utils.c -o main && ./main`

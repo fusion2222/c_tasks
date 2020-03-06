@@ -8,3 +8,10 @@ void display_results(int * arr, int count){
 	}
 	printf("\n");
 }
+
+
+void swap(int *a, int *b){
+	int temp = *a;
+	*a = *b;
+	*b = temp;
+}
